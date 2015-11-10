@@ -765,19 +765,21 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
 
     .memberMenuLoggedIn > a.logoutLnk,
     .memberMenuLoggedIn > a.logoutLnk {
-        border: medium none;
-        margin: 10px 0 0;
-        background-color: #a6da56;
-        color: #FFF;
+        background-color: #9fd548;
+        color: #ffffff;
         font-size: 14px;
-        padding: 6px 10px;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px 0 0;
+        border: none !important;
+        border-radius: 4px !important;
+        padding: 6px 20px;
         text-transform: uppercase;
-        border: medium none;
     }
 
     .memberMenuLoggedIn > a.logoutLnk:hover,
     li .memberMenuLoggedIn > a.logoutLnk:hover {
-        background-color: #a6da56;
+        background-color: #8cc338;
         text-decoration: none;
     }
 
@@ -3163,16 +3165,19 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
         position: absolute;
         top: 0px;
         z-index: 200;
-        border: solid 2px #2a2a2a;
-        background-color: #f2f0f0;
-        /*padding: 2rem;*/
+        border: solid 2px #d0d0d0;
+        background-color: #FFFFFF;
         max-width: 600px;
         left: 50%;
     }
 
     #ucInfoMessagebdy div.addedToBasketMsgOuterDiv > div,
     #main #ucInfoMessagebdy div.notAddedToBasket {
-        padding: 2rem;
+        background: #d3d3d3;
+        border: 1px solid #FFFFFF;
+        padding: 40px;
+        margin: 0 !important;
+        text-align: center;
     }
 
     #ucInfoMessagebdy div.addedToBasketMsgOuterDiv > div.ucInfoMessageContent {
@@ -3189,7 +3194,7 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
     }
 
     #ucInfoMessagebdy div.error {
-        color: #A00;
+        color: #ad3535;
     }
 
     #ucInfoMessagebdy .fa-close {
