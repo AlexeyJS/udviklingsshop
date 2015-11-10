@@ -655,9 +655,10 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
         position: absolute;
         z-index: 100;
         right: 0.9375rem;
+        min-width: 320px;
         max-width: 320px;
         width: 100%;
-        background-color: #faf9f7 !important;
+        background-color: #FFFFFF !important;
         box-shadow: 0px 7px 10px -4px #000;
         padding: 0.5rem;
         top: 27px;
@@ -665,7 +666,7 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
 
 	#memberMenuPanel {
 		top: 88px;
-		right: 201px;
+		right: 0;
 	}
 
     .accordion-navigation.loginMenuBdy > div.content label,
@@ -994,12 +995,12 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
     #topMenuQuickLinks > ul > li > a,
 	#topMenuQuickLinks > ul > li > .clListLink > a {
         color: #333333;
-        font-size: 18px;
+        font-size: 16px;
         padding-right: 22px;
         margin-right: 10px;
         display: block;
         position: relative;
-		line-height: 48px;
+		line-height: 47px;
 		font-weight: 700;
     }
 
@@ -1107,8 +1108,8 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
         margin: 0;
         height: 42px;
         border: medium none;
-        background-color: #a6da56;
-        color: #FFFFFF;
+        background-color: #FFFFFF;
+        color: #000000;
         font-size: 18px;
 		border-radius: 4px !important;
         padding-left: 8px;
