@@ -672,21 +672,27 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
     .accordion-navigation.loginMenuBdy > div.content label,
     .loginMenuBdy > div.content label {
         position: relative;
+        font-family: Tahoma, Arial, sans-serif;
+        font-size: 12px;
+        color: #333333;
         width: 100%;
         display: block;
-        min-height: 38px;
+        min-height: 30px;
         text-align: left;
-        padding-top: 4px;
+        padding-top: 2px;
     }
 
     .accordion-navigation.loginMenuBdy > div.content label input,
     .loginMenuBdy > div.content label input {
-        width: 65%;
+        width: 75%;
+        border: 1px solid #dddddb !important;
+        background-color: #FFFFFF !important;
         position: absolute;
         right: 0;
         top: 0;
+        font-size: 12px;
         padding: 6px;
-        height: 30px;
+        height: 24px;
     }
 
     .accordion-navigation.loginMenuBdy > div.content .button,
@@ -701,17 +707,19 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
 
     .accordion-navigation.loginMenuBdy > div.content .button input,
     .loginMenuBdy > div.content .button input {
-        background-color: #69c99c;
+        background-color: #9fd548;
         color: #FFF;
         font-size: 14px;
-        padding: 6px 10px;
+        font-weight: bold;
+        padding: 9px 20px;
         text-transform: uppercase;
         border: medium none;
+        border-radius: 4px !important;
     }
 
     .accordion-navigation.loginMenuBdy > div.content .button input:hover,
     .loginMenuBdy > div.content .button input:hover {
-        background-color: #61b88f;
+        background-color: #8cc338;
     }
 
     #memberMenuPanel .forgotLoginLnk,
@@ -727,23 +735,21 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
 
 	#memberMenuPanel .forgotLoginLnk {
 		left: 8px;
-		bottom: 50px;
 	}
 
     #memberMenuPanel .createNewCustomerLnk,
     #memberMenuPanelMobile .createNewCustomerLnk {
-        background-color: #666666;
-        color: #ffffff;
+        display: block;
+        background-color: #f3f2f2;
+        color: #333333;
         font-size: 14px;
-        padding: 8px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 4px !important;
+        padding: 7px 8px 6px;
         width: 100%;
         margin: 0;
         text-decoration: none;
-    }
-
-    #memberMenuPanel .createNewCustomerLnk:hover,
-    #memberMenuPanelMobile .createNewCustomerLnk:hover {
-        background-color: #A0A0A0;
     }
 
     .memberMenuLoggedIn > a,
@@ -841,16 +847,11 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
         font-size: 14px;
         padding: 6px 8px;
         float:left;
-        margin: 0px;
+        margin: 0;
         text-decoration: none;
         text-transform: uppercase;
         display: inline-block;
         line-height: normal;
-    }
-
-    #memberMenuPanelMobile .forgotLoginBackLnk:hover,
-	#memberMenuPanel .forgotLoginBackLnk:hover{
-        background-color: #A0A0A0;
     }
 
 	#memberMenuPanel .customerLoginBdy,
@@ -867,26 +868,30 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
         color: #030302;
         font-size: 18px;
         text-align: left;
+        margin-bottom: 6px;
     }
 
     #memberMenuPanel .forgotPasswordBdy p {
         color: #666666;
         font-size: 11px;
         text-align: left;
+        line-height: 14px;
     }
 
     #memberMenuPanel .sendPasswordReminder {
-        background-color: #69C99C;
+        background-color: #9fd548;
         color: #FFF;
         font-size: 14px;
-        padding: 6px 10px;
+        font-weight: bold;
         text-transform: uppercase;
+        padding: 9px 12px;
         border: medium none;
         float:right;
+        border-radius: 4px !important;
     }
 
     #memberMenuPanel .sendPasswordReminder:hover {
-        background-color: #61B88F;
+        background-color: #8cc338;
     }
 
     #memberMenuPanel .forgotPasswordInputContent {
@@ -901,29 +906,30 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
     }
 
     #memberMenuPanel .forgotPasswordInputContent > span {
+        font-family: Tahoma, Arial, sans-serif;
         font-size: 12px;
         color: #333333;
         float:left;
-        margin-top: 7px;
+        margin-top: 2px;
     }
 
     #memberMenuPanel .forgotPasswordInputContent > input {
         max-width: 75%;
         float:right;
+        height: 24px;
     }
 
     #memberMenuPanel .forgotLoginBackLnk {
-        background-color: #666;
-        color: #FFF;
+        background-color: #f3f2f2;
+        color: #333333;
         font-size: 14px;
-        padding: 6px 8px;
-        float:left;
-        margin: 0px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 9px 12px;
+        float: left;
+        margin: 0;
         text-decoration: none;
-    }
-
-    #memberMenuPanel .forgotLoginBackLnk:hover {
-        background-color: #A0A0A0;
+        border-radius: 4px !important;
     }
 
     /*** Topbanner styles ***/
@@ -995,13 +1001,14 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
     #topMenuQuickLinks > ul > li > a,
 	#topMenuQuickLinks > ul > li > .clListLink > a {
         color: #333333;
-        font-size: 16px;
+        font-size: 14px;
         padding-right: 22px;
         margin-right: 10px;
         display: block;
         position: relative;
 		line-height: 47px;
 		font-weight: 700;
+        text-transform: uppercase;
     }
 
     #topMenuQuickLinks li.active a:before,
