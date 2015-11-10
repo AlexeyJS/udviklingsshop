@@ -3528,6 +3528,10 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
       padding-top:6px;
     }
 
+    .frontpageCarousel{
+      display:none;
+    }
+
     .column,
     .columns {
         padding: 0px 5px;
