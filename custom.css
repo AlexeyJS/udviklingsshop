@@ -1213,13 +1213,24 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
     /*** Mini basket styles ***/
 
     #miniBasket > a, #miniBasketMobile a {
-        background-color: #2a2a2a;
-        padding: 13px 16px;
+        background:#efefef;
+        height:61px;
         text-align: left;
         position: relative;
         display: block;
         text-decoration: none;
     }
+
+    #miniBasketMobile .miniBasketItemCount{
+      display:block;
+      position:relative;
+      background: url('/media/328/img/icon-basket.png') no-repeat center center;
+      width:48px;
+      height:61px;
+      margin:0 auto;
+    }
+
+
 
 	#miniBasket > a,
 	#memberMenuDesktop {
@@ -1309,17 +1320,18 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
 
    #miniBasketMobile a.show-for-small-only span {
         color: #ffffff;
-        font-size: 11px;
+        font-size: 14px;
         font-weight: bold;
-        background-color: #69c99c;
+        background-color: #ff0000;
         display: inline-block;
         border-radius: 50%;
         text-align: center;
-        width: 20px;
-        padding: 2px 0px;
+        width: 32px;
+        height: 32px;
+        line-height:32px;
         position: absolute;
-        top: -4px;
-        right: 0px;
+        top: 4px;
+        right: -15px;
     }
 
 	#miniBasket .miniBasketItemCount {
@@ -1338,13 +1350,6 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
 		right: -17px;
 	}
 
-    #miniBasketMobile .miniBasketItemCount {
-        color: #69c99c;
-        font-size: 14px;
-        margin: 0px 5px 0px 12px;
-        text-decoration: none;
-        position: relative;
-    }
 
 	#miniBasket span.miniBasketText {
 		margin-left: 26px;
@@ -1361,7 +1366,7 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
         text-decoration: none;
     }
 
-    #miniBasket a.show-for-small-only div, #miniBasketMobile a.show-for-small-only div {
+    #miniBasket a.show-for-small-only div {
         max-width: 29px;
         margin: 0px auto;
     }
@@ -3604,19 +3609,22 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
 
     #mobileTopMenu {
         position: relative;
-        background-color: #ababab;
-        height: 49px;
+        background-color: #efefef;
+        height: 61px;
     }
 
     #mobileTopMenu > div {
-        height: 49px;
+
+        width:33.3337%;
+        float:left;
+        border:0;
         padding: 0px;
     }
 
     #mobileTopMenu > div a {
         display: table;
         width: 100%;
-        height: 49px;
+
         text-decoration: none;
     }
 
@@ -3628,17 +3636,33 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
         text-decoration: none;
     }
 
-    #mobileTopMenu .mobileMenu {
-        background-color: #bcbbbb;
-    }
-
-    #mobileTopMenu .mobileMemberMenu {
-        background-color: #ababab;
-    }
-
+    #mobileTopMenu .mobileMenu,
+    #mobileTopMenu .mobileMemberMenu,
     #mobileTopMenu .mobileSearch {
-        background-color: #999999;
+        background-color: #efefef;
     }
+
+    #mobileTopMenu .mobileMenu a,
+    #mobileTopMenu .mobileMemberMenu a,
+    #mobileTopMenu .mobileSearch a{
+      display:block;
+      height:61px;
+      margin:0;
+      width:100%;
+    }
+
+    #mobileTopMenu .mobileMenu a{
+      background:url('/media/328/img/icon-menu.png') no-repeat center center;
+    }
+
+    #mobileTopMenu .mobileMemberMenu a{
+      background:url('/media/328/img/icon-user.png') no-repeat center center;
+    }
+
+    #mobileTopMenu .mobileSearch a{
+      background:url('/media/328/img/icon-search.png') no-repeat center center;
+    }
+
 
     /*** Mobile member menu styles ***/
 
@@ -3649,7 +3673,7 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
     }
 
     #memberMenuPanelMobile {
-        top: 47px !important;
+        top: 58px !important;
     }
 
     /*** advanced Search styles ***/
@@ -3663,7 +3687,7 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
         right: 0;
         padding: 0.5rem;
         margin: 0;
-        top: 82px;
+        top: 92px;
     }
 
     #advancedSearchBdy.active input {

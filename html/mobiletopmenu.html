@@ -1,0 +1,23 @@
+<div id="mobileTopMenu" class="show-for-small-only">
+
+    <div class="mobileMenu">
+     	<a class="left-off-canvas-toggle"></a>
+    </div>
+    <div class="mobileMemberMenu">
+		  <a href="#memberMenuPanelMobile" data-dropdown="memberMenuPanelMobile" aria-controls="memberMenuPanelMobile" aria-expanded="false"></a>
+    </div>
+    <div class="mobileSearch">
+        <a></a>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#mobileTopMenu').parent().addClass('mobileTopMenuBdy');
+
+    $( ".mobileSearch" ).click(function() {
+        $('#advancedSearchBdy').toggleClass('active');
+    });
+
+	$('a.left-off-canvas-toggle').on('click',function(){
+		//Dont remove, it makes the left canvas toggle work on mobile
+    });
+</script>

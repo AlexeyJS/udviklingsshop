@@ -1,0 +1,60 @@
+<div class="orderDetailBdy">
+	<h1>
+		<eSeller:Select Text="label_orderdetail_header" />
+	</h1>
+	<a href="/customers/orderlist.aspx"><eSeller:Select Text="label_orderlist_back_text" /></a>
+	<eSeller:Data DataType="OrderHead" DataId="Order" IsOrderConfirmation="False" NotFoundYields403="True" DetailsQuerystringKey="ec54"/>
+	<eSeller:Control ControlID="Bestil igen" ControlType="OrderToBasketSpecific" DataSourceId="Order" />
+<span id="newPInfoAddToBasket" style="display:none;"><eSeller:Select text="label_new_addToBasket_btn" /></span>
+
+	<h2>
+		<eSeller:Select Text="label_invoice_head" TextSourceControlId="Betalingsadresse" />
+	</h2>
+	<div class="OrderPaymentAddressBdy">
+		<eSeller:Control ControlId="Betalingsadresse" ControlType="OrderPaymentAddress" DataSourceId="Order" />
+	</div>
+	<h2>
+		<eSeller:Select Text="label_delivery_head" TextSourceControlId="Leveringsadresse" />
+	</h2>
+	<div class="OrderShipmentAddressBdy">
+		<eSeller:If IsTrue="Data_Order:IsShipmentAddressSpecified">
+			<eSeller:Control ControlId="Leveringsadresse" ControlType="OrderShipmentAddress"  DataSourceId="Order" />
+		</eSeller:If>
+		<eSeller:If IsFalse="Data_Order:IsShipmentAddressSpecified">
+			<eSeller:Select Text="label_delivery_not_specified" TextSourceControlId="Leveringsadresse"/>
+		</eSeller:If>
+	</div>
+	<div class="OrderPaymentMethodBdy">
+		<span><eSeller:Select Text="label_payment_method" TextSourceControlId="Betalingsmåde" /></span>
+		<span><eSeller:Control ControlType="OrderPaymentMethod" ControlId="Betalingsmåde"  DataSourceId="Order" /></span>
+	</div>
+	<div class="OrderShipmentMethodBdy">
+		<span><eSeller:Select Text="label_delivery_method" TextSourceControlId="Leveringsmåde" /></span>
+		<span><eSeller:Control ControlType="OrderShipmentMethod" ControlId="Leveringsmåde" DataSourceId="Order" /></span>
+	</div>
+	<div class="OrderOrderingRemarksBdy">
+		<span><eSeller:Select Text="label_order_remarks" TextSourceControlId="Ordrebemærkning"/></span>
+		<span><eSeller:Control ControlType="OrderOrderingRemarks" ControlId="Ordrebemærkning"  DataSourceId="Order"  /></span>
+	</div>
+	<div class="OrderDetailsBdy">
+		<eSeller:Control ControlId="Ordrelinjer" ControlType="OrderDetails" DataSourceId="Order" CanReOrder="False" />
+	</div>
+	<div class="OrderTotalsBdy clearfix">
+		<eSeller:Control ControlId="Totaler" ControlType="OrderTotals" DataSourceId="Order" />
+	</div>
+</div>
+<script src="/media/314/js/JsonProductList.js"></script>
+<script>
+$(document).ready(function(){
+    $( "#main #ShopContent .orderDetailBdy #ec39 input[type='image']" ).each(function( index ) {
+
+			newAddToBasketBtn = $("<a></a>");
+			newAddToBasketBtn.addClass("addToBasketBtn");
+			newAddToBasketBtn.append($("#newPInfoAddToBasket").text());
+			$(this).parent().append(newAddToBasketBtn);
+			$('.addToBasketBtn').click(function(){
+			$('#ec39 input[type="image"]').click();
+			});
+    });
+});
+</script>
