@@ -767,7 +767,7 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
     .memberMenuLoggedIn > a.logoutLnk {
         border: medium none;
         margin: 10px 0 0;
-        background-color: #69c99c;
+        background-color: #a6da56;
         color: #FFF;
         font-size: 14px;
         padding: 6px 10px;
@@ -777,7 +777,7 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
 
     .memberMenuLoggedIn > a.logoutLnk:hover,
     li .memberMenuLoggedIn > a.logoutLnk:hover {
-        background-color: #61b88f;
+        background-color: #a6da56;
         text-decoration: none;
     }
 
