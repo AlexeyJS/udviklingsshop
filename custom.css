@@ -3760,6 +3760,9 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
         height: 30px;
         line-height: 29px;
     }
+    .left-off-canvas-menu .productMenuAllMobile li a{
+        font-size: 16px;
+    }
 
     .sortingContainer:after {
         top: -3px;
