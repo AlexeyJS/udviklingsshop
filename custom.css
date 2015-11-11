@@ -3757,11 +3757,12 @@ meta.foundation-version{font-family:"/5.5.1/"}meta.foundation-mq-small{font-fami
     .sortingContainer .sortOptions {
         font-size: 12px;
         max-width: 170px;
-        height: 18px;
+        height: 30px;
+        line-height: 29px;
     }
 
     .sortingContainer:after {
-        top: 0px;
+        top: -3px;
     }
 
     .pagecountspan {
